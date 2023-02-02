@@ -7,3 +7,6 @@ It is a simple restaraunt page mainly created to continue practicing DOM manipul
 This is also my first project utilising modules and using Webpack to bundle said modules.
 
 Pizza logo image credits - Creator: https://twitter.com/webalys, Source: http://emoji.streamlineicons.com/
+Pizza logo was edited by me to remove the fill colour and make the outline white.
+
+Restaurant background image credits - Jason Leung on Unsplash: https://unsplash.com/@ninjason
