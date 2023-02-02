@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Josefin+Sans:wght@300;500;700&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  color: rgb(243, 243, 243);
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 300;
+  z-index: 10;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(0, 0, 0);
+  display: flex;
+  flex-direction: column;
+  background-image: url(./assets/restaurant.jpg);
+  background-size: cover;
+  position: relative;
+}
+
+.background-color {
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.603);
+  z-index: 0;
+}
+
+.header {
+  height: 7%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  border-bottom: 2px solid rgba(243, 243, 243, 0.068);
+}
+
+.header > p {
+  font-family: 'Dancing Script', cursive;
+  position: absolute;
+  left: 20px;
+}
+
+.header > ul {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  gap: 70px;
+}
+
+li {
+  list-style: none;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  align-items: center;
+  margin-top: 8%;
+}
+
+#pizzaImg {
+  width: 120px;
+  height: 120px;
+}
+
+#title {
+  font-family: 'Dancing Script', cursive;
+  font-size: 90px;
+  font-weight: 400;
+  padding-bottom: 50px;
+}
+
+#opening-hours-heading,
+.opening-hours-container > h3:nth-of-type(1) {
+  font-weight: 500;
+}
+
+#opening-hours-heading,
+.opening-hours-container {
+  padding-bottom: 15px;
+}
+
+.opening-hours-container {
+  display: flex;
+  gap: 20px;
+}
+
+.btn {
+  margin-top: 50px;
+  width: 150px;
+  height: 35px;
+  padding-top: 3px;
+  font-size: 1.5rem;
+  background-color: rgba(0, 0, 0, 0);
+  border: 1px solid rgb(243, 243, 243);
+  border-radius: 7px;
+}
+
+.btn:hover {
+  background-color: rgba(255, 255, 255, 0.089);
+  cursor: pointer;
+}
+
+.image-credits {
+  position: absolute;
+  bottom: 10px;
+}
