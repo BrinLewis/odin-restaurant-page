@@ -117,4 +117,5 @@ li {
 .image-credits {
   position: absolute;
   bottom: 10px;
+  align-self: center;
 }
