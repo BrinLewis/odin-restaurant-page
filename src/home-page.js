@@ -1,5 +1,3 @@
-import { throttle } from "lodash";
-
 function loadHomePage() {
   const content = document.querySelector(".content");
 
