@@ -17,15 +17,20 @@ function renderFoundations() {
   // Create items for nav-bar
   const aboutBtn = document.createElement("li");
   aboutBtn.textContent = "About";
-  aboutBtn.classList.add("about-btn");
+  aboutBtn.setAttribute("id", "about-btn");
+  aboutBtn.classList.add("nav-btn");
   navItems.appendChild(aboutBtn);
+
   const homeBtn = document.createElement("li");
   homeBtn.textContent = "Home";
-  homeBtn.classList.add("home-btn");
+  homeBtn.setAttribute("id", "home-btn");
+  homeBtn.classList.add("nav-btn");
   navItems.appendChild(homeBtn);
+
   const menuBtn = document.createElement("li");
   menuBtn.textContent = "Menu";
-  menuBtn.classList.add("menu-btn");
+  menuBtn.setAttribute("id", "menu-btn");
+  menuBtn.classList.add("nav-btn");
   navItems.appendChild(menuBtn);
 
   // Create background image credits footer
