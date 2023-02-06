@@ -67,7 +67,7 @@ nav > ul {
   text-shadow: 0 0 3px rgba(255, 255, 255, 0.575);
 }
 
-.content {
+#home-page {
   display: flex;
   flex-direction: column;
   flex-grow: 1;

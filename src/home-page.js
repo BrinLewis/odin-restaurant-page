@@ -1,30 +1,34 @@
 function loadHomePage() {
   const content = document.querySelector(".content");
 
+  const homePage = document.createElement("div");
+  homePage.setAttribute("id", "home-page");
+  content.appendChild(homePage);
+
   // Create img element
   const pizzaImg = document.createElement("img");
   pizzaImg.setAttribute("id", "pizzaImg");
   pizzaImg.setAttribute("alt", "Cartoon Pizza Outline");
   pizzaImg.src = "./pizza-logo.svg";
-  content.appendChild(pizzaImg);
+  homePage.appendChild(pizzaImg);
 
   // Create info
   const title = document.createElement("h1");
   title.setAttribute("id", "title");
   title.textContent = "Odin's Fakeria";
-  content.appendChild(title);
+  homePage.appendChild(title);
 
   const timesHeading = document.createElement("h2");
   timesHeading.setAttribute("id", "opening-hours-heading");
   timesHeading.textContent = "Opening Hours";
-  content.appendChild(timesHeading);
+  homePage.appendChild(timesHeading);
 
   // Loop creates 2 divs with the same classname and numbered id without code repetition
   for (let i = 0; i < 2; i++) {
     let timesContainer = document.createElement("div");
     timesContainer.classList.add("opening-hours-container");
     timesContainer.setAttribute("id", `times-cont-${i + 1}`);
-    content.appendChild(timesContainer);
+    homePage.appendChild(timesContainer);
   }
 
   // Use the div's numbered id's to append the correct h3 elements to them
@@ -51,7 +55,7 @@ function loadHomePage() {
   bookBtn.setAttribute("type", "button");
   bookBtn.classList.add("btn");
   bookBtn.textContent = "Book Table";
-  content.appendChild(bookBtn);
+  homePage.appendChild(bookBtn);
 }
 
 export { loadHomePage };
