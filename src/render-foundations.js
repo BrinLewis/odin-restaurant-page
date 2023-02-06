@@ -1,10 +1,4 @@
 function renderFoundations() {
-  // Create Background Image
-  const backgroundImg = document.createElement("img");
-  backgroundImg.setAttribute("id", "backgroundImg");
-  backgroundImg.setAttribute("alt", "Empty Modern Restaurant");
-  document.body.appendChild(backgroundImg);
-
   // Assign Header
   const header = document.querySelector(".header");
 
@@ -23,12 +17,15 @@ function renderFoundations() {
   // Create items for nav-bar
   const aboutBtn = document.createElement("li");
   aboutBtn.textContent = "About";
+  aboutBtn.classList.add("about-btn");
   navItems.appendChild(aboutBtn);
   const homeBtn = document.createElement("li");
   homeBtn.textContent = "Home";
+  homeBtn.classList.add("home-btn");
   navItems.appendChild(homeBtn);
   const menuBtn = document.createElement("li");
   menuBtn.textContent = "Menu";
+  menuBtn.classList.add("menu-btn");
   navItems.appendChild(menuBtn);
 
   // Create background image credits footer
