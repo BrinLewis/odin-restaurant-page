@@ -1,6 +1,8 @@
 import "./styles.css"
 import { renderFoundations } from "./render-foundations";
 import { loadHomePage } from "./home-page";
+import pizzaLogo from "./assets/pizza-logo.svg";
+import { loadAboutPage } from "./about-page";
 
 renderFoundations();
 loadHomePage();
@@ -26,7 +28,7 @@ function highlightNavBtn (currentPage) {
 const aboutBtn = document.getElementById("about-btn");
 aboutBtn.addEventListener("click", () => {
   clearContent();
-  // loadAboutPage();
+  loadAboutPage();
   highlightNavBtn("about");
 });
 
