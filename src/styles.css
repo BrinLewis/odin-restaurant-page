@@ -67,6 +67,10 @@ nav > ul {
   text-shadow: 0 0 3px rgba(255, 255, 255, 0.575);
 }
 
+#location-img {
+  width: 300px;
+}
+
 #home-page {
   display: flex;
   flex-direction: column;
@@ -75,7 +79,7 @@ nav > ul {
   margin-top: 8%;
 }
 
-#pizzaImg {
+#pizza-img {
   width: 120px;
   height: 120px;
 }

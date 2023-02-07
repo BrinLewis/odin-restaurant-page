@@ -7,7 +7,7 @@ function loadHomePage() {
 
   // Create img element
   const pizzaImg = document.createElement("img");
-  pizzaImg.setAttribute("id", "pizzaImg");
+  pizzaImg.setAttribute("id", "pizza-img");
   pizzaImg.setAttribute("alt", "Cartoon Pizza Outline");
   pizzaImg.src = "./images/pizza-logo.svg";
   homePage.appendChild(pizzaImg);
