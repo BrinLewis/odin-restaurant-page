@@ -33,7 +33,7 @@ function renderFoundations() {
   menuBtn.classList.add("nav-btn");
   navItems.appendChild(menuBtn);
 
-  // Create background image credits footer
+  // Create image credits footer
   const photoCredit = document.createElement("p");
   photoCredit.classList.add("image-credits")
 
