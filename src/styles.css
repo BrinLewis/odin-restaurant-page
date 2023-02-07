@@ -79,9 +79,12 @@ nav > ul {
   margin-top: 8%;
 }
 
-#pizza-img {
+#pizza-img-120px {
   width: 120px;
-  height: 120px;
+}
+
+#pizza-img-90px {
+  width: 90px;
 }
 
 #title {
