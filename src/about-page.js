@@ -48,11 +48,23 @@ function loadAboutPage() {
   aboutUsTitle.textContent = "About Us";
   aboutUsContainer.appendChild(aboutUsTitle);
 
-  const aboutUsText = document.createElement("p");
-  aboutUsText.setAttribute("id", "about-us-text");
-  aboutUsText.textContent =
-    "Hi there! Welcome to the home of Odin's Fakeria. If you haven't noticed already, this restaurant is completely fake! Really, it doesn't even exist! Founded in 2023, we have worked hard to strive for absolutely nothing because we're not real. So don't come on down to Odin's Fakeria today and get your imaginary meal!";
-  aboutUsContainer.appendChild(aboutUsText);
+  const aboutUsFullText = document.createElement("div");
+  aboutUsFullText.classList.add("about-us-text");
+  aboutUsContainer.appendChild(aboutUsFullText);
+
+  const aboutUsText1 = document.createElement("p");
+  aboutUsText1.textContent =
+    "Hi there! Welcome to the home of Odin's Fakeria. If you haven't noticed already, this restaurant is completely fake! Really, it doesn't even exist!";
+  aboutUsFullText.appendChild(aboutUsText1);
+
+  const aboutUsText2 = document.createElement("p");
+  aboutUsText2.textContent =
+    "Founded in 2023, we have worked hard to strive for absolutely nothing because we're not real. All of our products are made from 100% \xa0\xa0\xa0\xa0\xa0\xa0\xa0 directly from the source, so we can ensure that our food will never exist. Forever.";
+  aboutUsFullText.appendChild(aboutUsText2);
+
+  const aboutUsText3 = document.createElement("p");
+  aboutUsText3.textContent = "So come on down to Odin's Fakeria today and get your first meal completely free! (and the rest)";
+  aboutUsFullText.appendChild(aboutUsText3);
 
   const btnsContainer = document.createElement("div");
   btnsContainer.setAttribute("id", "about-us-btns");
@@ -89,34 +101,22 @@ function loadAboutPage() {
     socialIcon.src = imgSrc;
 
     socialLink.appendChild(socialIcon);
-    followUsContainer.appendChild(socialLink);
+    socialsContainer.appendChild(socialLink);
   }
 
-  createIcon(
-    "twitter",
-    "https://www.twitter.com",
-    "./images/003-twitter.png"
-  );
+  createIcon("twitter", "https://www.twitter.com", "./images/003-twitter.png");
   createIcon(
     "instagram",
     "https://www.instagram.com",
     "./images/006-instagram.png"
   );
-  createIcon(
-    "tiktok",
-    "https://www.tiktok.com",
-    "./images/005-tik-tok.png"
-  );
+  createIcon("tiktok", "https://www.tiktok.com", "./images/005-tik-tok.png");
   createIcon(
     "facebook",
     "https://www.facebook.com",
     "./images/004-facebook.png"
   );
-  createIcon(
-    "youtube",
-    "https://www.youtube.com",
-    "./images/002-youtube.png"
-  );
+  createIcon("youtube", "https://www.youtube.com", "./images/002-youtube.png");
   createIcon(
     "pinterest",
     "https://www.pinterest.com",
