@@ -1,8 +1,15 @@
 import "./styles.css"
 import { renderFoundations } from "./render-foundations";
 import { loadHomePage } from "./home-page";
-import pizzaLogo from "./assets/pizza-logo.svg";
+import "./assets/pizza-logo.svg";
 import { loadAboutPage } from "./about-page";
+import "./assets/maplocation.png";
+import "./assets/icons/001-pinterest.png";
+import "./assets/icons/002-youtube.png";
+import "./assets/icons/003-twitter.png";
+import "./assets/icons/004-facebook.png";
+import "./assets/icons/005-tik-tok.png";
+import "./assets/icons/006-instagram.png";
 
 renderFoundations();
 loadHomePage();
