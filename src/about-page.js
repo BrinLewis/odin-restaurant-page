@@ -97,8 +97,6 @@ function loadAboutPage() {
   socialsContainer.setAttribute("id", "socials-container");
   followUsContainer.appendChild(socialsContainer);
 
-  // Twitter, Instagram, Tiktok, pinterest, youtube, facebook.
-
   function createIcon(social, link, imgSrc) {
     const socialLink = document.createElement("a");
     socialLink.setAttribute("href", `${link}`);
