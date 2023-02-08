@@ -10,6 +10,7 @@ import "./assets/icons/003-twitter.png";
 import "./assets/icons/004-facebook.png";
 import "./assets/icons/005-tik-tok.png";
 import "./assets/icons/006-instagram.png";
+import "./assets/icons/map-marker-outline.png";
 
 renderFoundations();
 loadHomePage();
