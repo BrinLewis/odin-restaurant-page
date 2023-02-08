@@ -47,7 +47,7 @@ function loadAboutPage() {
 
   // Populate About Us section
   const pizzaImg = document.createElement("img");
-  pizzaImg.setAttribute("id", "pizza-img-90px");
+  pizzaImg.setAttribute("id", "pizza-img-70px");
   pizzaImg.setAttribute("alt", "Cartoon Pizza Outline");
   pizzaImg.src = "./images/pizza-logo.svg";
   aboutUsContainer.appendChild(pizzaImg);
