@@ -27,9 +27,17 @@ function loadAboutPage() {
   findUsTitle.textContent = "Find Us";
   findUsContainer.appendChild(findUsTitle);
 
+  const findUsLocation = document.createElement("div");
+  findUsContainer.appendChild(findUsLocation);
+
+  const markerIcon = document.createElement("img");
+  markerIcon.src = "./images/map-marker-outline.png";
+  markerIcon.setAttribute("id", "map-marker-icon");
+  findUsLocation.appendChild(markerIcon);
+
   const findUsText = document.createElement("p");
   findUsText.textContent = "Capital Boulevard. Los Santos, SA 69420";
-  findUsContainer.appendChild(findUsText);
+  findUsLocation.appendChild(findUsText);
 
   const mapImg = document.createElement("img");
   mapImg.setAttribute("id", "location-img");
@@ -82,11 +90,11 @@ function loadAboutPage() {
 
   // Populate Follow Us section
   const followUsTitle = document.createElement("h1");
-  followUsTitle.textContent = "follow Us";
+  followUsTitle.textContent = "Follow Us";
   followUsContainer.appendChild(followUsTitle);
 
   const socialsContainer = document.createElement("div");
-  socialsContainer.setAttribute("id", "socialsContainer");
+  socialsContainer.setAttribute("id", "socials-container");
   followUsContainer.appendChild(socialsContainer);
 
   // Twitter, Instagram, Tiktok, pinterest, youtube, facebook.
