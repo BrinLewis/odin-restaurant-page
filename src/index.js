@@ -11,6 +11,7 @@ import "./assets/icons/004-facebook.png";
 import "./assets/icons/005-tik-tok.png";
 import "./assets/icons/006-instagram.png";
 import "./assets/icons/map-marker-outline.png";
+import { loadMenuPage } from "./menu-page";
 
 renderFoundations();
 loadHomePage();
@@ -50,6 +51,6 @@ homeBtn.addEventListener("click", () => {
 const menuBtn = document.getElementById("menu-btn");
 menuBtn.addEventListener("click", () => {
   clearContent();
-  // loadMenuPage();
+  loadMenuPage();
   highlightNavBtn("menu");
 });
